@@ -27,7 +27,7 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t $AZURE_CONTAINER_REGISTRY/$IMAGE_NAME:latest
+        docker build -t $AZURE_CONTAINER_REGISTRY/$IMAGE_NAME:latest .
         docker push $AZURE_CONTAINER_REGISTRY/$IMAGE_NAME:latest
 
     # - name: Deploy to Azure Web App (Container)
