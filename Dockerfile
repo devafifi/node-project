@@ -12,9 +12,10 @@ RUN npm install --production --legacy-peer-deps
 COPY . .
 
 # Expose the port your app runs on
-EXPOSE 8080
+EXPOSE 80
 
 # Run the application
 CMD ["node", "app.js"]
+
 
 
